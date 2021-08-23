@@ -75,7 +75,7 @@
                         <td th:text="${emp.name}">${emp.name}</td>
                         <td th:text="${emp.salary}">${emp.salary}</td>
                         <td th:text="${emp.age}">${emp.age}</td>
-                        <td th:text="${calendars.format(emp.,'yyyy-MM-dd')}"><fmt:formatDate value="${emp.}" pattern="yyyy-MM-dd"></fmt:formatDate></td>
+                        <td th:text="${calendars.format(emp.bir,'yyyy-MM-dd')}"><fmt:formatDate value="${emp.bir}" pattern="yyyy-MM-dd"></fmt:formatDate></td>
                         <td th:text="${emp.sex ? '男':'女' }">${emp.sex ? '男':'女'}</td>
                         <td>
                             <a href="javascript:void(0)" id="del">delete emp</a>&nbsp;

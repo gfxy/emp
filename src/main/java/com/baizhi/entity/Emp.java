@@ -9,6 +9,7 @@ import java.io.Serializable;
  * @author gf
  * @since 2021-07-05 18:41:42
  */
+
 public class Emp implements Serializable {
     private static final long serialVersionUID = 887587242949864984L;
 
@@ -20,10 +21,26 @@ public class Emp implements Serializable {
 
     private Integer age;
 
-    private Date ;
+    private Date bir;
 
     private String sex;
 
+    public Emp() {
+
+    }
+
+    public Emp(String id, String name, Object salary, Integer age, Date bir, String sex) {
+        this.id = id;
+        this.name = name;
+        this.salary = salary;
+        this.age = age;
+        this.bir = bir;
+        this.sex = sex;
+    }
+
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
+    }
 
     public String getId() {
         return id;
@@ -57,12 +74,12 @@ public class Emp implements Serializable {
         this.age = age;
     }
 
-    public Date get() {
-        return ;
+    public Date getBir() {
+        return bir;
     }
 
-    public void set(Date ) {
-        this. = ;
+    public void setBir(Date bir) {
+        this.bir = bir;
     }
 
     public String getSex() {
@@ -80,7 +97,7 @@ public class Emp implements Serializable {
                 ", name='" + name + '\'' +
                 ", salary=" + salary +
                 ", age=" + age +
-                ", =" +  +
+                ", bir=" + bir +
                 ", sex='" + sex + '\'' +
                 '}';
     }
